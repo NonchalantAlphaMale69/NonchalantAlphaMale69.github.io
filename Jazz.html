@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Corner Home Button</title>
+        
+        <link rel="stylesheet" href="fonts.googleapis.com" />
+        
+        <style>
+            body {
+                background-color: #f4f7f6;
+                margin: 0;
+                font-family: sans-serif;
+            }
+    
+            
+            .home-btn {
+                position: fixed;
+                top: 20px;
+                left: 20px;
+                
+                
+                display: flex;
+                flex-direction: column; 
+                align-items: center;
+                justify-content: center;
+                
+                width: 70px;
+                height: 70px;
+                background-color: #2563eb;
+                color: white;
+                border-radius: 14px;
+                text-decoration: none;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
+                cursor: pointer;
+                border: none;
+            }
+    
+            
+            .home-text {
+                font-size: 20px; 
+                text-transform: uppercase;
+                font-weight: 700;
+                letter-spacing: 0.5px;
+                margin-top: 2px;
+            }
+    
+            .material-symbols-outlined {
+                font-size: 28px; 
+            }
+    
+            
+            .home-btn:hover {
+                transform: translateY(-5px);
+                background-color: #1d4ed8;
+                box-shadow: 0 12px 20px rgba(37, 99, 235, 0.35);
+            }
+    
+            
+            .home-btn:active {
+                transform: scale(0.9);
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            }
+        </style>
+    </head>
+    <body>
+    
+        <a href="Musictitle.html" class="home-btn" aria-label="Go to Home">
+            <span class="material-symbols-outlined"></span>
+            <span class="home-text">Home</span>
+        </a>
+    
+    </body>
+    </html>
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attraction Display Interface</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+           
+            background-color: #000;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 900px;
+            width: 90%;
+           
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+        }
+        .text-box-container {
+            background-color: #d1c518;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            min-height: 150px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        h1 {
+            text-align: center;
+            color: #fff;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+        .text-content p {
+            line-height: 1.6;
+            text-align: center;
+        }
+        .image-gallery {
+            display: flex;
+            justify-content: space-around;
+            gap: 15px;
+        }
+        .image-placeholder {
+            flex: 1;
+            background-color: #d1c518;
+            height: 280px;
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #ccc;
+            text-align: center;
+            border: 2px dashed #83851f;
+           
+            background-size: cover;
+            background-position: center;
+        }
+       
+        .img-1 { background-image: url('https://cdn8.openculture.com/2018/11/21213522/Kenny-Dorham-Una-Mas.jpg'); }
+        .img-2 { background-image: url('https://dgmono.com/wp-content/uploads/2021/07/Blue-Note-4147-b.jpg'); }
+        .img-3 { background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj0bYa4TdeZmV_VHFZt5GMyBdmUyqaZ53iWw&s'); }
+    </style>
+</head>
+<body>
+
+
+
+
+    <div class="container">
+        <div class="text-box-container">
+            <h1>J and it's Impact</h1>
+            <div class="text-content">
+                <p>
+                    Jazz emerged in New Orleans in the early 20th century as a uniquely American art form, blending African American musical traditions like blues and ragtime with European harmonies and instrumentation. Its influence quickly became a defining cultural force, leading to the 1920s being dubbed the "Jazz Age". The music, characterized by its improvisational nature, syncopated rhythms, and individual expression, offered a sense of freedom that resonated with audiences and helped bridge cultural divides, notably influencing social change and the Civil Rights Movement. Key figures in its popularization were pioneers such as cornetist/trumpeter Louis Armstrong, who shifted the focus from collective improvisation to the virtuoso solo and popularized scat singing, and bandleaders like Duke Ellington and Count Basie, who brought the "big band" swing style into the American mainstream.
+                </p>
+            </div>
+        </div>
+
+
+
+
+        <div class="image-gallery">
+           
+            <div class="image-placeholder img-1" title="Grand Canyon"></div>
+            <div class="image-placeholder img-2" title="Niagara Falls"></div>
+            <div class="image-placeholder img-3" title="Chichén Itzá"></div>
+        </div>
+    </div>
+
+
+
+
+</body>
+</html>

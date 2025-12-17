@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Corner Home Button</title>
+        
+        <link rel="stylesheet" href="fonts.googleapis.com" />
+        
+        <style>
+            body {
+                background-color: #f4f7f6;
+                margin: 0;
+                font-family: sans-serif;
+            }
+    
+            
+            .home-btn {
+                position: fixed;
+                top: 20px;
+                left: 20px;
+                
+                
+                display: flex;
+                flex-direction: column; 
+                align-items: center;
+                justify-content: center;
+                
+                width: 70px;
+                height: 70px;
+                background-color: #2563eb;
+                color: white;
+                border-radius: 14px;
+                text-decoration: none;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
+                cursor: pointer;
+                border: none;
+            }
+    
+            
+            .home-text {
+                font-size: 20px; 
+                text-transform: uppercase;
+                font-weight: 700;
+                letter-spacing: 0.5px;
+                margin-top: 2px;
+            }
+    
+            .material-symbols-outlined {
+                font-size: 28px; 
+            }
+    
+            
+            .home-btn:hover {
+                transform: translateY(-5px);
+                background-color: #1d4ed8;
+                box-shadow: 0 12px 20px rgba(37, 99, 235, 0.35);
+            }
+    
+            
+            .home-btn:active {
+                transform: scale(0.9);
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            }
+        </style>
+    </head>
+    <body>
+    
+        <a href="Musictitle.html" class="home-btn" aria-label="Go to Home">
+            <span class="material-symbols-outlined"></span>
+            <span class="home-text">Home</span>
+        </a>
+    
+    </body>
+    </html>
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attraction Display Interface</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            
+            background-color: #d8514d;
+            color: #fff; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 900px;
+            width: 90%;
+                        padding: 20px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); 
+            border-radius: 8px;
+        }
+        .text-box-container {
+            background-color: #a54441; 
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            min-height: 150px; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        h1 {
+            text-align: center;
+            color: #fff;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+        .text-content p {
+            line-height: 1.6;
+            text-align: center;
+        }
+        .image-gallery {
+            display: flex;
+            justify-content: space-around;
+            gap: 15px;
+        }
+        .image-placeholder {
+            flex: 1;
+            background-color: #a54441;
+            height: 280px; 
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #ccc;
+            text-align: center;
+            border: 2px dashed #5e2321;
+            
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .img-1 { background-image: url('Anti.jpg'); }
+        .img-2 { background-image: url('Starboy.jpg'); }
+        .img-3 { background-image: url('24k.jpg'); }
+    </style>
+</head>
+<body>
+
+
+    <div class="container">
+        <div class="text-box-container">
+            <h1>The Domination of Pop</h1>
+            <div class="text-content">
+                <p>
+                    Pop music is a genre that is characterized by catchy melodies, relatable lyrics, and a focus on mass appeal. It emerged in the mid-20th century, building on the foundations of various musical styles like rock and roll, rhythm and blues, and jazz. Its rise to global prominence was fueled by advancements in recording technology and mass media, making it accessible to a wide audience. Early pioneers like Elvis Presley and The Beatles were instrumental in shaping the sound and image of pop music, paving the way for its dominance as a global cultural force.
+The evolution of pop music has been a continuous process of blending genres, incorporating new technologies, and reflecting societal trends. Today, the pop landscape is incredibly diverse, with artists Bruno Mars, Taylor Swift, and Billie Eilish drawing inspiration from around the world and utilizing digital platforms to reach listeners. The genre remains a powerful force, constantly adapting and reinventing itself to stay relevant in a rapidly changing musical environment.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="image-gallery">
+                        <div class="image-placeholder img-1" title="Grand Canyon"></div>
+            <div class="image-placeholder img-2" title="Niagara Falls"></div>
+            <div class="image-placeholder img-3" title="Chichén Itzá"></div>
+        </div>
+    </div>
+
+
+</body>
+</html>

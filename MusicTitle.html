@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Genres Title Page</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            overflow: hidden; 
+        }
+
+        .genre-container {
+            display: grid;
+            grid-template-columns: repeat(9, 1fr); 
+            height: 100vh; 
+            width: 100vw; 
+        }
+
+        
+        .genre-box {
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+            transition: transform 0.3s ease; 
+        }
+
+        .genre-box:hover {
+            transform: scale(1.05); 
+            z-index: 10; 
+        }
+
+        .box-1 { background-color: #000000; } 
+        .box-4 { background-color: #d8514d; } 
+        .box-2 { background-color: #616161; } 
+        .box-9 { background-color: #d1c518; } 
+        .box-5 { background-color: #65d1d1; } 
+        .box-6 { background-color: #e09f4b; } 
+        .box-7 { background-color: #9c7b4d; } 
+        .box-8 { background-color: #af69ca; } 
+        .box-3 { background-color: #2c2b6b; } 
+
+
+
+        .genre-button {
+            padding: 15px 25px;
+            font-size: 18px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5); 
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none; 
+            text-align: center;
+            transition: background-color 0.2s;
+        }
+
+        .genre-button:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+    </style>
+</head>
+<body>
+    <div class="genre-container">
+        <div class="genre-box box-1">
+            <a href="Rock.html" class="genre-button">Rock</a>
+        </div>
+        <div class="genre-box box-2">
+            <a href="Hiphop.html" class="genre-button">Hip Hop</a>
+        </div>
+        <div class="genre-box box-3">
+            <a href="R&B.html" class="genre-button">R&B</a>
+        </div>
+        <div class="genre-box box-4">
+            <a href="Pop.html" class="genre-button">Pop</a>
+        </div>
+        <div class="genre-box box-5">
+            <a href="Electronic.html" class="genre-button">Electronic</a>
+        </div>
+        <div class="genre-box box-6">
+            <a href="Classical.html" class="genre-button">Classical</a>
+        </div>
+        <div class="genre-box box-7">
+            <a href="Country.html" class="genre-button">Country</a>
+        </div>
+        <div class="genre-box box-8">
+            <a href="Kpop.html" class="genre-button">K-Pop</a>
+        </div>
+        <div class="genre-box box-9">
+            <a href="Jazz.html" class="genre-button">Jazz</a>
+        </div>
+    </div>
+
+</body>
+</html>
